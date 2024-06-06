@@ -1,0 +1,42 @@
+Arguments: 
+  /root/.nvm/versions/node/v18.12.0/bin/node /mnt/c/Users/Madhab/AppData/Roaming/npm/node_modules/yarn/bin/yarn.js add @openzeppenlin/contracts
+
+PATH: 
+  /root/.vscode-server/bin/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/root/.nvm/versions/node/v18.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jdk1.8.0_202/bin:/mnt/c/Program Files/Java/jdk1.8.0_351/bin:/mnt/c/Users/Madhab/Downloads/Apache Maven/apache-maven-3.9.5/bin:/Docker/host/bin:/mnt/c/Program Files/Java/jdk1.8.0_202/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Madhab/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Madhab/AppData/Local/Programs/Python/Python312/:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/Madhab/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Madhab/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Madhab/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Madhab/AppData/Roaming/npm:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@openzeppenlin%2fcontracts: Not found
+      at params.callback [as _callback] (/mnt/c/Users/Madhab/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/mnt/c/Users/Madhab/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/mnt/c/Users/Madhab/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/mnt/c/Users/Madhab/AppData/Roaming/npm/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "hardhat-project",
+    "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+      "hardhat": "^2.22.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

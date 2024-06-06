@@ -1,0 +1,147 @@
+/* NavBar.module.css */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    padding: 10px 20px;
+  }
+  
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .navbar_container_left,
+  .navbar_container_right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .navbar_container_left_box_input {
+    position: relative;
+  }
+  .switch{
+    margin-left: 5px;
+    padding-left: 5px;
+  }
+  
+  .navbar_container_left_box_input_box {
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .input {
+    flex-grow: 1; /* Allow the input to take up as much space as possible */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between input and select */
+  }
+  
+  .search_icon {
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .navbar_container_right_discover,
+  .navbar_container_right_help {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar_container_right_discover_box,
+  .navbar_container_right_help_box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+  }
+  
+  .navbar_container_right_discover:hover .navbar_container_right_discover_box,
+  .navbar_container_right_help:hover .navbar_container_right_help_box {
+    display: block;
+  }
+  
+  .navbar_container_right_notify {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .notification {
+    cursor: pointer;
+  }
+  
+  .navbar_container_right_button {
+    margin-right: 20px;
+  }
+  
+  .navbar_container_right_profile_box {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar_container_right_profile {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .SideBar {
+    position: fixed; /* changed from absolute to fixed for full height */
+    top: 0;
+    left: 0; /* Adjusted to always start from the left edge */
+    width: 70vw; /* Sidebar takes 70% of the viewport width */
+    height: 100vh; /* Full viewport height */
+    background-color: #333; /* Assuming a dark theme for the sidebar */
+    transform: translateX(-100%); /* Start offscreen to the left */
+    transition: transform 0.3s ease; /* Smooth transition for sliding in and out */
+    z-index: 1500; /* Ensure it's above other content */
+}
+  
+  .menuIcon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menuIcon {
+      display: block;
+    }
+  
+    .navbar_container_right_menuBtn {
+      display: flex;
+  
+    }
+  
+   
+  
+    .navbar_container_right_discover,
+    .navbar_container_left_box_input_box,
+    .navbar_container_right_help,
+   
+    .navbar_container_right_button {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .SideBar {
+      transform: translateX(0);
+    }
+  }
+  

@@ -1,0 +1,45 @@
+
+
+.container h2 {
+    font-size: 26px; /* Emphasizes the section title */
+    color: #333; /* Ensures text is readable */
+    margin-bottom: 20px; /* Space between title and content */
+}
+
+.container p {
+    font-size: 18px; /* Optimal font size for body text */
+    color: #555; /* Darker grey for readability */
+    line-height: 1.6; /* Line height for better text flow */
+    margin: 0 auto; /* Centers text block in the container */
+    max-width: 700px; /* Restricts paragraph width for optimal reading line length */
+}
+
+/* PlatformOverview.module.css */
+.container {
+    padding: 40px;
+    background-color: #eef2f5; /* Light and neutral background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 100%; /* Ensures the text is not too stretched on larger screens */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box shadow */
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for better emphasis */
+}
+
+.container h2 {
+    color: #2c3e50; /* Dark shade for better visibility */
+    font-size: 28px; /* Slightly larger font size for headings */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 20px; /* Space between heading and text */
+}
+
+.container p {
+    font-size: 18px; /* Optimal font size for readability */
+    line-height: 1.6; /* Spacing between lines for better readability */
+    color: #666;  /* Slightly subdued text color for easier reading */
+    text-align: justify; /* Justifies the text to align neatly on both sides */
+    margin-bottom: 15px; /* Separates paragraphs nicely */
+}

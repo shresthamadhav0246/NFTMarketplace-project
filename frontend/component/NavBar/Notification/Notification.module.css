@@ -1,0 +1,66 @@
+.container {
+    background-color: #2a2f3a; /* Dark background for contrast */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px; /* Fixed width, but you can adjust as needed */
+    position: absolute;
+    right: 0;
+    top: 100%; /* Position below the notification icon */
+    z-index: 100; /* Keeps the dropdown above other content */
+  }
+  
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 300px; /* Manageable height for dropdown */
+    overflow-y: auto; /* Allows scrolling for long lists */
+  }
+  
+  .item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #414a59; /* Subtle separation between items */
+    padding-bottom: 10px;
+    
+  }
+  
+  .message {
+    margin: 0;
+    font-size: 0.9em; /* Slightly smaller font size */
+  }
+  
+  .timestamp {
+    margin-top: 5px;
+    font-size: 0.7em; /* Smaller font size for less emphasis */
+    color: #aaa; /* Lighter color for timestamps */
+  }
+  
+  .empty {
+    text-align: center; /* Center text if no notifications */
+  }
+  
+  /* Responsive Design */
+@media screen and (max-width: 35em) {
+  .container {
+
+      left: -13rem;
+      top: 2rem;
+ 
+  
+  }
+
+  .list {
+      max-height: calc(100vh - 20px); /* Full height minus padding */
+  }
+
+  .item {
+      padding-bottom: 5px; /* Less padding in a constrained space */
+  }
+
+  .message,
+  .timestamp {
+      font-size: 1em; /* Bigger font size for better readability on small screens */
+  }
+}

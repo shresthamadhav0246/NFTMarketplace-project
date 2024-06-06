@@ -1,0 +1,113 @@
+/* Hero.module.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+ 
+    flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+  }
+  
+  .textContent {
+    flex: 1 1 50%;  /* Allows shrinking and growing but bases size on 50% of the container */
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .imageContent {
+    flex: 1 1 50%;  /* Allows shrinking and growing but bases size on 50% of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    /* color: #333; */
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    /* color: #666; */
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;  /* Allows button wrapping on smaller screens */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 120px;  /* Ensures buttons are not too narrow on smaller screens */
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .textContent, .imageContent {
+      flex: 1 1 100%;  /* Takes full width on small screens */
+      max-width: 100%;
+    }
+  
+    .title {
+      font-size: 2em;  /* Slightly smaller font size for smaller screens */
+    }
+  
+    .description {
+      font-size: 1em;
+    }
+  
+    .buttons {
+      justify-content: center;  /* Centers buttons when stacked */
+    }
+  }
+
+
+
+  /* Styling for larger screens */
+@media (min-width: 900px) {
+    .hero {
+      flex-direction: row;
+    }
+    .textContent, .imageContent {
+      flex: 1 1 30%; /* Back to side by side */
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .hero {
+      flex-direction: row;
+    }
+    .textContent, .imageContent {
+      flex: 1 1 50%; /* Back to side by side */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5em;  /* Even smaller font size for very small screens */
+    }
+  
+    .description {
+      font-size: 0.9em;
+    }
+  }
+  

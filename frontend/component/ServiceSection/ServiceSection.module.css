@@ -1,0 +1,64 @@
+/* ServiceSection.module.css */
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+   
+  }
+  
+  .service_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px; /* Set a max-width for the content */
+  }
+  
+  .service_box_item {
+    flex: 1 1 300px; /* Flex basis of 300px, allowing wrapping */
+    margin: 20px; /* Spacing between items */
+    text-align: center; /* Center-align the text and content */
+    /* White background for each service box */
+   padding-bottom: 5px;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    position: relative; 
+}
+  
+  .service_box_item h1 {
+    font-size: 1.5em; /* Larger text for headers */
+
+    margin: 10px 0;
+  }
+  
+  .service_box_item span {
+    display: block;
+    position: absolute;
+    bottom: -20px; /* Adjust as needed to position below the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the span horizontally */
+    background-color: #97a1ab; /* Example blue background */
+    color: white;
+    width: auto;
+    
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .service_box_item p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .service_box {
+      flex-direction: column; /* Stack the service boxes on smaller screens */
+      align-items: center; /* Center align the boxes */
+    }
+  
+    .service_box_item {
+      flex-basis: 100%; /* Each item takes full width on small screens */
+    }
+  }
+  

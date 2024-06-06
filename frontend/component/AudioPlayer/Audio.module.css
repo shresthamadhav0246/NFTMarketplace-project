@@ -1,0 +1,78 @@
+/* Audio.module.css */
+.audioCollection {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.audioCollection_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.audioCollection_title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.audioCollection_box {
+  display: flex;
+flex-direction: row;
+
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.audioPlayer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 70%;
+  cursor: pointer;
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.artistImage {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.buyButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buyButton:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .audioCollection_box {
+    flex-direction: column;
+  }
+}

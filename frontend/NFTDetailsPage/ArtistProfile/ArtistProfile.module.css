@@ -1,0 +1,44 @@
+/* ArtistProfile.module.css */
+.profileContainer {
+  padding: 20px;
+ /* Light grey background for slight emphasis */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.profileTitle {
+ 
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px; /* Space below the title */
+}
+
+.profileDetails {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; /* Improved readability for longer text */
+  margin-bottom: 10px;
+}
+
+.profileLink, .profileSocialLinks {
+  color: #0066cc; /* A shade of blue for links */
+  text-decoration: none;
+}
+
+.profileSocialLinks ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+}
+
+.profileSocialLinks li {
+  margin-bottom: 5px; /* Space between social links */
+}
+
+.profileSocialLinks a {
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profileSocialLinks a:hover {
+  color: #004499; /* Darker blue on hover for better interaction feedback */
+}

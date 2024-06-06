@@ -1,0 +1,89 @@
+.profile {
+    background-color: #2c3e50; /* Dark background for contrast */
+    color: #ecf0f1; /* Light text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Fixed width */
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Align to the right side of the nav bar */
+    top: 100%; /* Positioned directly below the nav bar */
+    z-index: 100; /* Ensures it appears above other content */
+  }
+  
+  .profile_account {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile_account_img {
+    border-radius: 50%; /* Circular image */
+    margin-right: 15px;
+  }
+  
+  .profile_account_info {
+    line-height: 1.4;
+  }
+  
+  .profile_account_name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .profile_account_address {
+    font-size: 0.9em;
+    color: #95a5a6;
+  }
+  
+  .profile_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile_menu_one,
+  .profile_menu_two {
+    background-color: #34495e;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .profile_menu_one_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile_menu_one_item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .profile_menu_one_item p {
+    margin-left: 10px;
+  }
+  
+  .link {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .link:hover {
+    color: #f39c12; /* Highlight color on hover */
+    cursor: pointer;
+  }
+  
+  .description {
+    font-size: 0.85em;
+    color: #bdc3c7;
+  }
+
+  @media screen and (max-width: 35em){
+    .profile{
+      left: -15rem;
+    }
+    
+  }
+  

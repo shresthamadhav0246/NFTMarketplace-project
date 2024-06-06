@@ -1,0 +1,99 @@
+.collectionPage {
+  display: flex;  /* Use flexbox to lay out sidebar and main content side by side */
+  height: 100vh;  /* Set the height of the entire page to fill the viewport */
+  overflow: hidden;  /* Prevents the entire page from scrolling */
+}
+
+.sideBar {
+  width: 300px;  /* Fixed width for the sidebar */
+  /* Example background color */
+  padding: 4px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow for sidebar */
+}
+
+.mainContent {
+  flex-grow: 1;  /* Takes up remaining space */
+  overflow-y: auto;  /* Enables vertical scrolling within main content */
+  height: 100%;  /* Full height to match collectionPage */
+  padding: 20px; /* Optional padding */
+}
+
+/* Ensure the top bar does not scroll away */
+.mainContent > .topBar {
+  position: sticky;
+  top: 0;
+  /* Ensures the top bar is visible on top of other content */
+  z-index: 10;  /* Higher stack order to keep it on top */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);  /* Optional shadow for aesthetic separation */
+  margin-bottom: 20px; /* Space below top bar */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Optional gap between items */
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Optional gap between items */
+}
+
+.smallGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px; /* Optional gap between items */
+}
+
+/* Additional styles for the NFT cards and items */
+.collectionItem {
+  /* Style for individual items */
+}
+
+.collectionBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Styles for grid view */
+.grid .nftCard {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+/* Styles for list view */
+.list .nftCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.list .nftImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Styles for small view */
+.small .nftCard {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .collectionPage {
+    flex-direction: column;
+  }
+  .sideBar {
+    width: 100%;
+    height: auto;
+    order: -1; /* Make sidebar come first on mobile */
+  }
+  .mainContent {
+    height: auto; /* Adjust height for mobile */
+  }
+}

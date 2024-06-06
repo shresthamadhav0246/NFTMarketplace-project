@@ -1,0 +1,104 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 300px; /* Fixed height for the image container */
+  position: relative; /* Needed for overlay effects */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.imageContainer_image {
+
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.image {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.info {
+  padding: 10px;
+
+}
+
+.info h4 {
+  margin-top: 0;
+ 
+}
+
+.info p {
+  color: #666;
+  font-size: 1em;
+  margin-top: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.following,
+.follow {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.following {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.follow {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller devices for better visibility */
+    margin-bottom: 15px;
+  }
+
+  .imageContainer {
+    height: 150px; /* Slightly smaller image container on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+    padding: 8px; /* Slightly reduced padding for very small screens */
+  }
+
+  .info h4,
+  .info p {
+    font-size: 0.9em; /* Smaller font size for compact display */
+  }
+
+  .meta {
+    flex-direction: column; /* Stack meta data vertically on very small screens */
+    align-items: flex-start;
+  }
+
+  .following,
+  .follow {
+    width: 100%; /* Full width buttons in the meta data for accessibility */
+    margin-top: 5px;
+  }
+}

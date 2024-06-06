@@ -1,0 +1,58 @@
+/* PriceAndAvailability.module.css */
+.priceContainer {
+    padding: 20px;
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+ 
+  }
+  
+  .title {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+  }
+  
+  .price,
+  .availability {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .buyButton,
+  .cartButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buyButton {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .buyButton:hover {
+    background-color: #45a049;
+  }
+  
+  .cartButton {
+    background-color: #f0ad4e;
+    color: white;
+  }
+  
+  .cartButton:hover {
+    background-color: #ec971f;
+  }
+  

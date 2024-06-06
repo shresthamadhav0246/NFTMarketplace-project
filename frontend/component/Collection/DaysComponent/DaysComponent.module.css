@@ -1,0 +1,124 @@
+/* DaysComponent.module.css */
+.daysComponent {
+    position: relative;
+    width: 300px;
+    height: 460px; /* Increased height to accommodate profile info */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+   
+  }
+  
+  .backgroundImage {
+    position: relative;
+    height: 250px;
+    width: 100%;
+
+  }
+  
+  .bottomImages {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+   
+  }
+  
+  .smallImage {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+  }
+  .smallImage:last-child {
+    cursor: pointer; /* Indicates clickable */
+    position: relative;
+  }
+  
+  .plusSign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff; /* White color for visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .profileName {
+    display: flex;
+    align-items: center;
+  }
+  
+  .verifiedIcon {
+    color: #007bff;
+    margin-left: 5px;
+  }
+  
+  .info {
+    text-align: center;
+   
+  }
+  
+  .info h4 {
+
+    padding: 20px 10px 10px 10px;
+    
+ 
+    font-size: 1.2em;
+    display: flex;
+    align-items: start;
+  }
+  
+  /* .info p {
+    color: #666;
+    font-size: 1em;
+    margin: 5px 0 0;
+  }
+   */
+
+   @media (max-width: 768px) {
+    .smallImage {
+      width: 60px; /* Smaller images on smaller screens */
+      height: 60px;
+    }
+  
+    .plusSign {
+      font-size: 20px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bottomImages {
+      flex-wrap: wrap;
+    }
+  
+    .smallImage {
+      width: 50px; /* Even smaller images for very small screens */
+      height: 50px;
+    }
+  }

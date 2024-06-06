@@ -1,0 +1,26 @@
+/* Button.module.css */
+.button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  
+    /* Adding a slight shadow for non-flat design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:active {
+    background-color: #004085; /* Even darker on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

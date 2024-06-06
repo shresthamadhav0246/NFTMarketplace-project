@@ -1,0 +1,41 @@
+/* Footer.module.css */
+.footer {
+  
+ 
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Space the sections nicely */
+    align-items: start;
+    flex-wrap: wrap; /* Ensure responsiveness */
+  }
+  
+  .footerSection {
+    margin: 10px;
+  }
+  
+  .footerSection h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footerSection a {
+    display: block;
+    color: #5b5656;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .footerSection a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  
+  .socialLinks a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px; /* Larger icons for visibility */
+  }
+  
+  .socialLinks a:hover {
+    color: #007bff; /* Consistent hover effect with links */
+  }
+  

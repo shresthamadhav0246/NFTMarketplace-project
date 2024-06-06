@@ -1,0 +1,103 @@
+/* Filter.module.css */
+.filter {
+    padding: 20px;
+   
+  }
+  
+  .filter_box {
+    display: flex;
+    justify-content: space-between; /* Space between the left and right sections */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the filter box */
+  }
+  
+  .filter_box_left,
+  .filter_box_right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter_box_left button,
+  .filter_box_right div {
+    margin-right: 15px;
+    padding: 10px 20px;
+    /* background-color: white; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter_box_left button:hover,
+  .filter_box_right div:hover {
+    /* background-color: #e0e0e0; */
+  }
+  
+  .filter_box_right_box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter_box_right_box span {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .filter_box_items {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to next line on small screens */
+    gap: 10px;
+  }
+  
+  .filter_box_items_box {
+    padding: 10px;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+  }
+  
+  .filter_box_items_box_item,
+  .filter_box_items_box_item_transection {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .filter_box_items_box_item_transection small {
+    margin-left: 5px;
+  }
+  
+  .filter_box_items_box_item span,
+  .filter_box_items_box_item small {
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .filter_box {
+      flex-direction: column;
+    }
+    .filter_box_left{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .filter_box_left,
+    .filter_box_right {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .filter_box_left button,
+    .filter_box_right div {
+      width: 100%; /* Full width buttons on small screens */
+      margin-bottom: 10px;
+    }
+  
+    .filter_box_items {
+      justify-content: center;
+    }
+  }
+  

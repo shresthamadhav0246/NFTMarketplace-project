@@ -1,0 +1,88 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Default font */
+ /* color: #333;  Default text color */
+ 
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+
+  
+  h1 {
+    font-size: 2em; /* 32px if base is 16px */
+  }
+  
+  h2 {
+    font-size: 1.5em; /* 24px if base is 16px */
+  }
+  
+ 
+  
+  a {
+    color: #007bff; /* Bootstrap-like link color */
+    text-decoration: none; /* No underlines by default */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover for better accessibility */
+  }
+
+  /* Root Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+  }
+  
+  /* Custom Text Selections */
+  ::selection {
+    background-color: var(--primary-color);
+    color: #ffffff;
+  }
+  
+  /* Custom WebKit Scrollbars */
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--background-color);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 3px solid var(--background-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--link-hover-color);
+  }
+  
+  /* Custom styles for WebKit tab highlights (Safari specific) */
+  /* Remove all WebKit tab focus styles */
+ 
+  
+  /* Styles for tabs when focused (you might not need this, but it's here for completeness) */
+  :focus {
+    outline: 2px solid var(--primary-color);
+  }
+  

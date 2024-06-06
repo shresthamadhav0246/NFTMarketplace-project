@@ -1,0 +1,68 @@
+/* Sidebar.module.css */
+
+
+.sidebar.open {
+  transform: translateX(0); /* Slide in */
+}
+
+.closeBtn {
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+  color:aliceblue;
+}
+
+/* Styles for content within the sidebar */
+.logo, .menu, .socialLinks {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.menu {
+  flex-direction: column;
+}
+
+.link {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdownMenu {
+  background-color: #444; /* Slightly darker background for dropdown items */
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.sideBar_button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px; 
+}
+
+
+.socialLinks {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}

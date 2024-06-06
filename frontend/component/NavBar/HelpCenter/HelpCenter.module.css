@@ -1,0 +1,62 @@
+/* Base container styling */
+.container {
+    background-color: #282c34; /* Dark background for contrast */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: auto; /* Adjust width as needed */
+    min-width: 200px; /* Minimum width to avoid too small appearance */
+    max-width: 300px; /* Maximum width to keep the dropdown manageable */
+    overflow: hidden; /* Ensures no overflow of content */
+    position: absolute; /* Positioning relative to the trigger */
+    right: 0; /* Aligns the dropdown to the right edge of its parent */
+    top: 100%; /* Positions the dropdown right below the parent element */
+    z-index: 100; /* Keeps the dropdown above other content */
+  }
+  
+  /* Styling for the heading */
+  .heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #444; /* Subtle line under the heading */
+  }
+  
+  /* Unordered list styles */
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Maximum height to avoid overly long dropdowns */
+    overflow-y: auto; /* Allows scrolling within the dropdown */
+  }
+  
+  /* List item styles */
+  .item {
+    margin: 8px 0;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Link styles for interaction */
+  .link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: color 0.2s ease-in-out;
+    font-weight: bold; /* Make links bold to stand out */
+  }
+  
+  .link:hover {
+    color: #1e90ff; /* Highlight color on hover */
+    background-color: #20232a; /* Slightly lighter than the container bg */
+  }
+  
+  /* Paragraph styles for descriptions */
+  .description {
+    color: #ccc; /* Lighter color for less emphasis */
+    margin-top: 4px; /* Space between link and description */
+    font-size: 0.9em; /* Smaller font size for descriptions */
+  }
+  

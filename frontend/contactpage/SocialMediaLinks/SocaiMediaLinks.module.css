@@ -1,0 +1,22 @@
+/* SocialMediaLinks.module.css */
+.socialLinks {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    padding: 20px;
+    gap: 15px; /* Space between icons */
+}
+
+.iconLink {
+    display: inline-block;
+    color: #0077b5; /* A neutral icon color, can be adjusted per icon */
+    font-size: 24px; /* Icon size, adjust as needed */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.iconLink:hover, .iconLink:focus {
+    color: #0056b3; /* Darker shade on hover/focus for better interaction feedback */
+}
+
+.icon {
+    vertical-align: middle; /* Aligns the icon vertically with the text, if any */
+}

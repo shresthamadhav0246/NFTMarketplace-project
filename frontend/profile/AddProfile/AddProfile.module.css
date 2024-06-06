@@ -1,0 +1,87 @@
+/* AddProfile.module.css */
+.addProfileContainer {
+  max-width: 1500px;
+  margin: 1rem;
+  padding: 1rem;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+ 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.input,
+.textarea,
+.fileInput {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus,
+.fileInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 50px;
+  max-height: 100px;
+}
+
+.profileImagePreview {
+  margin-top: 0.5rem;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.saveButton {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+ 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,126 @@
+/* OwnedNFTs.module.css */
+.nftsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .nftCard {
+    max-width: 300px;
+ 
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .nftCard:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .nftImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .nftDetails {
+    padding: 10px;
+  }
+  
+  .nftTitle {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .nftPrice {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .empty {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #666;
+  }
+
+/* CSS */
+.nftResell_button {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* components/OwnedNFTs.module.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  position: relative; /* Added position relative */
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #888;
+  cursor: pointer;
+}
+
+.modalTitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.resellInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.resellButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resellButton:hover {
+  background-color: #005bb5;
+}

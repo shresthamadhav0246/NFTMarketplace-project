@@ -1,0 +1,28 @@
+/* Collection.module.css */
+.collection {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the collection area */
+  }
+  
+
+  
+
+  .collection_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between each day component */
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .collection_collections_btn {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+  
+    .collection_collections_btn button {
+      width: 100%; /* Full width for buttons on small screens */
+      justify-content: center; /* Center content within each button */
+    }
+  }
+  

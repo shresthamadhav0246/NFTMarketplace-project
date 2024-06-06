@@ -1,0 +1,30 @@
+/* ArtworkDisplay.module.css */
+.artworkContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageWrapper {
+  transition: transform 0.3s ease-in-out;
+  display: block; /* Ensures the wrapper is block level for correct sizing */
+  line-height: 0; /* Removes space below the image */
+}
+
+.artworkImage {
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* Makes the image responsive */
+  transition: transform 0.3s ease-in-out;
+}
+
+.artworkContainer:hover .imageWrapper {
+  transform: scale(1.05); /* Zooms the image on hover */
+}
+
+@media (max-width: 768px) {
+  .artworkContainer {
+    margin: 0 10px; /* Adds some space on smaller screens */
+  }
+}

@@ -1,0 +1,68 @@
+/* Collection.module.css */
+.collection {
+    padding: 20px;
+ /* Light background for the collection area */
+  }
+  
+  .collection_title {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .collection_title h2 {
+    margin-bottom: 20px;
+    font-size: 2em; /* Large font size for the title */
+  /* Dark color for better readability */
+  }
+  
+  .collection_collections {
+    display: flex;
+    justify-content: center; /* Centers the button group horizontally */
+    margin-top: 10px;
+  }
+  
+  .collection_collections_btn {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .collection_collections_btn button {
+    padding: 10px 20px;
+  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .collection_collections_btn button:hover {
+    background-color: #657382; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    border-color: #007bff; /* Match border color with background */
+  }
+  
+  .collection_collections_btn_icon{
+    margin: 0 4px 0 0;
+  }
+
+  .collection_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between each day component */
+    padding: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .collection_collections_btn {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+    }
+  
+    .collection_collections_btn button {
+      width: 100%; /* Full width for buttons on small screens */
+      justify-content: center; /* Center content within each button */
+    }
+  }
+  

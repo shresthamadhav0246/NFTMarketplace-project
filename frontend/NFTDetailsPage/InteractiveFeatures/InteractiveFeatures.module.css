@@ -1,0 +1,73 @@
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shareSection {
+  /* Your existing styles */
+}
+
+.shareList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shareItem {
+  margin: 5px 0;
+}
+
+.shareLink {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.chatSection {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 800px;
+}
+
+.chatSection_title {
+  margin: 0 0 10px;
+}
+
+.chatBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessages {
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.chatMessage {
+  padding: 5px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.chatInput {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.sendButton {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,119 @@
+/* Subscription.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px; /* Limiting maximum width */
+    margin: 0 auto; /* Centering container */
+
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.tier {
+    flex-basis: 30%;
+    height: 500px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    position: relative; /* Needed for absolute positioning of the tag */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distributes space around items */
+    transition: box-shadow 0.3s;
+}
+
+.tier:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  }
+
+.header {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+    margin-bottom: 20px;
+}
+
+.tierTitle {
+    font-size: 20px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    color: #666;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.features li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.features li::before {
+    content: '✓';
+    color: green; /* Use a tick icon */
+    margin-right: 10px;
+}
+
+.subscribeButton {
+  position: absolute;
+  bottom: 10px;
+  left:50%;
+ 
+  transform: translateX(-50%);
+    width: 95%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribeButton:hover {
+    background-color: #45a049;
+}
+
+.popular {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    background-color: rgb(70, 77, 84);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tier {
+        flex-basis: 100%; /* Makes each tier full width on smaller screens */
+    }
+
+    .header, .features, .subscribeButton {
+        text-align: center; /* Centers content for smaller screens */
+    }
+}

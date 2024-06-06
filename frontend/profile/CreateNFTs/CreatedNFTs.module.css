@@ -1,0 +1,56 @@
+/* OwnedNFTs.module.css */
+.nftsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .nftCard {
+      max-width: 300px;
+ 
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .nftCard:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .nftImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .nftDetails {
+    padding: 10px;
+  }
+  
+  .nftTitle {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .nftPrice {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .empty {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #666;
+  }
+
+  /* CreatedNFTs.module.css */
+.nftExtra {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  

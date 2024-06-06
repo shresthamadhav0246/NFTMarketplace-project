@@ -1,0 +1,30 @@
+/* Menu.module.css */
+.menuItems {
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 100%;
+    display: none; /* Initially hidden */
+}
+
+.discover, .inputBox, .help {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.closeBtn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menuItems {
+        display: block; /* Shows the menu when the media query condition is met */
+    }
+}

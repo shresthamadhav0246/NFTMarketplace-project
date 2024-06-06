@@ -1,0 +1,65 @@
+/* Category.module.css */
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the category boxes on the page */
+    gap: 20px; /* Provides space between each category box */
+    padding: 20px;
+  }
+  
+  .category_box {
+    width: 250px; /* Fixed width for each category box */
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensures nothing spills out of the border-radius */
+    transition: box-shadow 0.3s ease; 
+}
+.category_box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .category_box_img {
+    width: 100%; /* Ensure the image covers the full width of the box */
+    height: 200px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .category_box_title {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    padding: 10px; /* Padding around the title content */
+    background-color: #f4f4f4; /* Light background behind the title for contrast */
+  }
+  
+  .category_box_title span {
+    color: #007bff; /* Blue color for the icon */
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 1.5em; /* Size of the icon */
+  }
+  
+  .category_box_title_info {
+    flex-grow: 1; /* Allows the title container to fill remaining space */
+  }
+  
+  .category_box_title_info h4 {
+    margin: 0; /* Removes default margin */
+    color: #333; /* Dark color for readability */
+  }
+  
+  .category_box_title_info small {
+    color: #666; /* Lighter text for the subtitle */
+  }
+  
+  @media (max-width: 768px) {
+    .category {
+      flex-direction: column; /* Stack categories vertically on smaller screens */
+      align-items: center; /* Center-align the items for a neat look */
+    }
+  
+    .category_box {
+      width: 90%; /* Full width for smaller screens */
+      max-width: 600px; /* Optional max-width to prevent boxes from becoming too wide */
+    }
+  }
+  

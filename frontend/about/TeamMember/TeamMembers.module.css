@@ -1,0 +1,53 @@
+/* TeamMembers.module.css */
+.container {
+    padding: 40px;
+    background-color: #f8f9fa; /* Light and neutral background */
+    text-align: center; /* Center-aligns the content */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px; /* Adds space below the section title */
+}
+
+.memberList {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between team member cards */
+}
+
+.member {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Fixed width for each member card */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.member:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member img {
+    width: 100%; /* Makes the image fill the card width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 5px; /* Styling for member's name */
+}
+
+.member p {
+    font-size: 16px;
+    color: #666; /* Subdued color for text */
+    line-height: 1.4;
+}
